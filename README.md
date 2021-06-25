@@ -10,10 +10,18 @@
 * Rust version: 1.53.0
 
 ### How to run
-* How to run Python version in Powershell
+* How to run Python+pyarrow version in Powershell
 
 ```
 cd pyex
+pip3 install -r requirements.txt
+Measure-Command { python3 .\ex1.py }
+```
+
+* How to run Python+Pandas version in Powershell
+
+```
+cd pyex-pandas
 pip3 install -r requirements.txt
 Measure-Command { python3 .\ex2.py }
 ```
