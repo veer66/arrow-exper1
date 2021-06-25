@@ -28,5 +28,5 @@ Measure-Command { cargo run --release }
 
 ### Result 
 * Rust version took 2692.8923ms
-* Python version took 354189.0579ms
-* Rust version is 131.5 times faster than Python version
+* Python+pyarrow version took 354189.0579ms (131.5 times)
+* Python+Pandas version took 541926.1722ms (201.2 times)
