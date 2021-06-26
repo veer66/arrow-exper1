@@ -64,3 +64,16 @@ Similar to Experiment 2
 
 * Python + Pandas + Native Python list + float version (ex4.py) took 13265.0073ms
 * Python + Pandas version (ex2.py) took 474084.4263ms
+
+
+## Experiment 3
+
+### Setup
+
+* Similar to experiment 2
+* Add parallel version of Rust
+
+### Result
+
+* Rust with Arrow version (rsex) took 2682.4199ms
+* Rust with Arrow and Rayon version (rsex-par) took 2319.2673ms (0.86 times)
