@@ -38,3 +38,16 @@ Measure-Command { cargo run --release }
 * Rust version took 2692.8923ms
 * Python+pyarrow version took 354189.0579ms (131.5 times)
 * Python+Pandas version took 541926.1722ms (201.2 times)
+
+## Experiment 2
+
+### Setup 
+
+* The setup is almost the same as Experiment 1.
+* Add a cached version of Python+pyarrow (Thanks Sorrawut Kittikeereechaikun)
+* Fix output member bug
+
+### Result
+* Rust version took 2510.838ms
+* Python+pyarrow version took 362449.9403ms (144.4 times)
+* Cached Python+pyarrow version took 10742.1672 (4.3 times)
