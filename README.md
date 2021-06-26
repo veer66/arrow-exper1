@@ -51,3 +51,16 @@ Measure-Command { cargo run --release }
 * Rust version took 2510.838ms
 * Python+pyarrow version took 362449.9403ms (144.4 times)
 * Cached Python+pyarrow version took 10742.1672 (4.3 times)
+
+## Experiment 3
+
+### Setup 
+
+Similar to Experiment 2
+
+* Convert numpy array to Python list of float
+
+### Result
+
+* Python + Pandas + Native Python list + float version (ex4.py) took 13265.0073ms
+* Python + Pandas version (ex2.py) took 474084.4263ms
