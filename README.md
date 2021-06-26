@@ -21,7 +21,7 @@ Measure-Command { python3 .\ex1.py }
 * How to run Python+Pandas version in Powershell
 
 ```
-cd pyex-pandas
+cd pyex_pandas
 pip3 install -r requirements.txt
 Measure-Command { python3 .\ex2.py }
 ```
