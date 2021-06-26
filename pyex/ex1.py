@@ -12,7 +12,7 @@ def is_fake_max_age(age, i):
         if age_j is not None and age_i is not None and age_j > age_i * RATIO:
             is_max = False
             break
-    return age
+    return is_max
 
 tab = csv.read_csv("../confirmed-cases.csv")
 age = tab["age"]

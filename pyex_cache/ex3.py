@@ -1,4 +1,5 @@
-import pandas as pd
+import pyarrow as pa
+from pyarrow import csv
 
 FRAME_SIZE = 300
 RATIO = 11.1
@@ -13,8 +14,8 @@ def is_fake_max_age(age, i):
             break
     return is_max
 
-tab = pd.read_csv("../confirmed-cases.csv")
+tab = csv.read_csv("../confirmed-cases.csv")
 age = tab["age"]
+age = [age[i].as_py() for i in range(len(age))]
 max_age_col = [is_fake_max_age(age, i) for i in range(len(age))]
 print(len(max_age_col), max_age_col[10000])
-
